@@ -51,8 +51,9 @@ jobs:
           cd zip
           zip -r liquidbounce.zip *
           md5sum liquidbounce.zip
+          mv liquidbounce.zip ~/liquidbounce.zip
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
             name: Liquidbounce
-            path: zip/liquidbounce.zip
+            path: ~/liquidbounce.zip
