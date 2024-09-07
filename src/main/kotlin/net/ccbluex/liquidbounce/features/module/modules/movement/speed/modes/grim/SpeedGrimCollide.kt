@@ -13,7 +13,7 @@ import kotlin.math.sin
 
 class SpeedGrimCollide(override val parent: ChoiceConfigurable<*>) : Choice("GrimCollide") {
 
-    private val speed by float("BoostSpeed", 0.08F, 0.01F..0.08F, "b/t")
+    private val speed by float("BoostSpeed", 0.08F, 0.01F..0.1F, "b/t")
 
     /**
      * Grim Collide mode for the Speed module.
